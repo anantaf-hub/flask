@@ -1,53 +1,24 @@
-<div align="center"><img src="https://raw.githubusercontent.com/pallets/flask/refs/heads/stable/docs/_static/flask-name.svg" alt="" height="150"></div>
+# Flask Testing Assignment
 
-# Flask
+## Overview
+This assignment includes test cases written for the Flask framework.
 
-Flask is a lightweight [WSGI] web application framework. It is designed
-to make getting started quick and easy, with the ability to scale up to
-complex applications. It began as a simple wrapper around [Werkzeug]
-and [Jinja], and has become one of the most popular Python web
-application frameworks.
+## What was tested
+- Flask app creation
+- App name assignment
+- Route decorators
+- URL mapping
+- Test client usage
+- Response content and status codes
 
-Flask offers suggestions, but doesn't enforce any dependencies or
-project layout. It is up to the developer to choose the tools and
-libraries they want to use. There are many extensions provided by the
-community that make adding new functionality easy.
+## Test Design
+The tests verify that Flask behaves as expected when:
+- Creating an application
+- Defining routes
+- Handling requests
 
-[WSGI]: https://wsgi.readthedocs.io/
-[Werkzeug]: https://werkzeug.palletsprojects.com/
-[Jinja]: https://jinja.palletsprojects.com/
+## Expectations
+These tests are designed to catch most logical errors. Some behaviors may not be testable due to internal framework design.
 
-## A Simple Example
-
-```python
-# save this as app.py
-from flask import Flask
-
-app = Flask(__name__)
-
-@app.route("/")
-def hello():
-    return "Hello, World!"
-```
-
-```
-$ flask run
-  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-```
-
-## Donate
-
-The Pallets organization develops and supports Flask and the libraries
-it uses. In order to grow the community of contributors and users, and
-allow the maintainers to devote more time to the projects, [please
-donate today].
-
-[please donate today]: https://palletsprojects.com/donate
-
-## Contributing
-
-See our [detailed contributing documentation][contrib] for many ways to
-contribute, including reporting issues, requesting features, asking or answering
-questions, and making PRs.
-
-[contrib]: https://palletsprojects.com/contributing/
+## Conclusion
+The test suite provides coverage for core Flask functionality and ensures expected behavior.
